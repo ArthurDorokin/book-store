@@ -1,0 +1,17 @@
+.main .wrap-content {
+    display: flex;
+    justify-content: space-between;
+    margin: 25px 0 0 0;
+}
+
+.main .wrap-content .content {
+    border: 1px solid;
+    width: 77%;
+    padding: 15px;
+}
+
+.main .wrap-content .sidebar {
+    border: 1px solid;
+    width: 16%;
+    padding: 15px;
+}

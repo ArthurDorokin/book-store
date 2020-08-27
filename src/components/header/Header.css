@@ -1,0 +1,49 @@
+.main .header {
+    display: flex;
+    border-radius: 3px;
+    border: 1px solid #d6d6d6;
+    height: 52px;
+    padding: 0 15px 0 15px;
+}
+
+.main .wrap-header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+}
+
+.main .wrap-header .right-block {
+    display: flex;
+    align-items: center;
+    height: 100%;
+}
+.main .wrap-header .right-block .price {
+    padding: 0 15px 0 15px;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    border-left: 1px solid #d6d6d6;
+    border-right: 1px solid #d6d6d6;
+}
+.main .wrap-header .right-block .price span {
+    font-weight: 700;
+    padding: 0 0 0 10px;
+}
+.main .wrap-header .right-block .basket {
+    padding: 0 0 0 15px;
+    height: 100%;
+    display: flex;
+    align-items: center;
+}
+.main .wrap-header .right-block .basket span {
+    font-weight: 700;
+    padding: 0 0 0 10px;
+}
+.main .wrap-header .header-title {
+    height: 100%;
+    display: flex;
+    align-items: center;
+    border-right: 1px solid #d6d6d6;
+    padding: 0 15px 0 0;
+}

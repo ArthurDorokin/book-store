@@ -1,0 +1,9 @@
+.main .container {
+    width: 1300px;
+    margin: 0 auto;
+    font-family: 'Quicksand', sans-serif;
+    font-weight: 400;
+}
+.main .container strong{
+    font-weight: 600;
+}
