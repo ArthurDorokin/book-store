@@ -5,7 +5,111 @@
 }
 
 .main .wrap-content .content {
-    border: 1px solid;
-    width: 77%;
-    padding: 15px;
+    width: 80%;
+    padding: 0;
+}
+
+.main .wrap-books {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.main .wrap-books .book-item {
+    margin: 0 30px 40px 0;
+    width: 228px;
+    border: 1px solid #f2f2f2;
+}
+
+.main .wrap-books .book-item .title-book h4 {
+    height: 70px;
+}
+
+.main .wrap-books .img-book {
+    width: 230px;
+    height: 300px;
+}
+
+.main .wrap-books .img-book img {
+    width: 100%;
+    height: 100%;
+}
+
+.main .wrap-books .book-item .btn-book button {
+    border: none;
+    outline: none;
+    background: #2ac128;
+    width: 100%;
+    padding: 8px 0;
+    color: #ffffff;
+    cursor: pointer;
+}
+
+.main .wrap-books .book-item .title-book {
+    padding: 0 10px;
+}
+
+.main .wrap-books .book-item .price-book {
+    font-size: 15px;
+    margin: 10px 0 5px 0;
+    padding: 0 10px;
+}
+
+.main .wrap-books .book-item .btn-book {
+    padding: 0 10px;
+}
+
+.main .wrap-books .book-item .rating-book {
+    padding: 10px 10px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: relative;
+}
+
+.main .wrap-books .book-item .rating-span {
+    position: relative;
+    display: flex;
+}
+
+.main .wrap-books .book-item .rating-star {
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+    margin: 0 0 0 10px;
+}
+
+.main .wrap-books .book-item .rating-star span {
+    background: url(/img/w512h5121386955480starfull.png) no-repeat;
+    width: 20px;
+    height: 20px;
+    position: relative;
+    background-size: contain;
+    padding: 0 0 0 3px;
+    filter: invert(.5);
+}
+
+.main .wrap-books .book-item .rating-star .rating-span.two span:nth-of-type(1),
+.main .wrap-books .book-item .rating-star .rating-span.two span:nth-of-type(2) {
+    filter: invert(.1);
+}
+
+.main .wrap-books .book-item .rating-star .rating-span.three span:nth-of-type(1),
+.main .wrap-books .book-item .rating-star .rating-span.three span:nth-of-type(2),
+.main .wrap-books .book-item .rating-star .rating-span.three span:nth-of-type(3) {
+    filter: invert(.1);
+}
+
+.main .wrap-books .book-item .rating-star .rating-span.four span:nth-of-type(1),
+.main .wrap-books .book-item .rating-star .rating-span.four span:nth-of-type(2),
+.main .wrap-books .book-item .rating-star .rating-span.four span:nth-of-type(3),
+.main .wrap-books .book-item .rating-star .rating-span.four span:nth-of-type(4) {
+    filter: invert(.1);
+}
+
+.main .wrap-books .book-item .rating-star .rating-span.five span:nth-of-type(1),
+.main .wrap-books .book-item .rating-star .rating-span.five span:nth-of-type(2),
+.main .wrap-books .book-item .rating-star .rating-span.five span:nth-of-type(3),
+.main .wrap-books .book-item .rating-star .rating-span.five span:nth-of-type(4),
+.main .wrap-books .book-item .rating-star .rating-span.five span:nth-of-type(5) {
+    filter: invert(.1);
 }
