@@ -1,6 +1,7 @@
 const catalog = [
     {
         id: 0,
+        link: "/product/big-book-of-science-things-to-make-and-do/",
         img: "/img/books/232a076f-e14a-11e9-811a-ac1f6b909025-1800x1200.jpg",
         alt: "Big Book of Science Things to Make and Do",
         title: "Big Book of Science Things to Make and Do",
@@ -25,6 +26,7 @@ const catalog = [
     },
     {
         id: 1,
+        link: "/product/harry-and-meghan-revised-life-loss-and-love/",
         img: "/img/books/9781602865280_1-1800x1200.jpg",
         alt: "Harry and Meghan (Revised): Life, Loss, and Love",
         title: "Harry and Meghan (Revised): Life, Loss, and Love",
@@ -49,6 +51,7 @@ const catalog = [
     },
     {
         id: 2,
+        link: "/product/the-institute/",
         img: "/img/books/b36eed4d-07bd-11ea-811c-ac1f6b909025-1800x1200.jpg",
         alt: "The Institute",
         title: "The Institute",
@@ -75,6 +78,7 @@ const catalog = [
     },
     {
         id: 3,
+        link: "/product/porsche-book-the-best-porsche-images-by-frank-m-orel/",
         img: "/img/books/9783961711673-1800x1200.jpg",
         alt: "Porsche Book: The Best Porsche Images by Frank M. Orel",
         title: "Porsche Book: The Best Porsche Images by Frank M. Orel",
@@ -99,6 +103,7 @@ const catalog = [
     },
     {
         id: 5,
+        link: "/product/too-much-and-never-enough-how-my-family-created-the-worlds-most-dangerous-man/",
         img: "/img/books/9781471190131-1800x1200.jpg",
         alt: "Too Much and Never Enough: How My Family Created the World's Most Dangerous Man",
         title: "Too Much and Never Enough: How My Family Created the World's Most Dangerous Man",
@@ -124,6 +129,7 @@ const catalog = [
     },
     {
         id: 6,
+        link: "/product/the-testaments/",
         img: "/img/books/8f304844-07b9-11ea-811c-ac1f6b909025-1800x1200.jpg",
         alt: "The Testaments",
         title: "The Testaments",
@@ -149,6 +155,7 @@ const catalog = [
     },
     {
         id: 7,
+        link: "/product/shoe-dog-a-memoir-by-the-creator-of-nike/",
         img: "/img/books/81750ee9-0787-11ea-811c-ac1f6b909025-1800x1200.jpg",
         alt: "Shoe Dog: A Memoir by the Creator of NIKE",
         title: "Shoe Dog: A Memoir by the Creator of NIKE",
@@ -174,6 +181,7 @@ const catalog = [
     },
     {
         id: 8,
+        link: "/product/the-woman-in-the-window/",
         img: "/img/books/9780008234188_1-1800x1200.jpg",
         alt: "The Woman in the Window",
         title: "The Woman in the Window",
@@ -198,6 +206,7 @@ const catalog = [
     },
     {
         id: 9,
+        link: "/product/artemis-fowl-and-the-arctic-incident-book/",
         img: "/img/books/9780241434642-1800x1200.jpg",
         alt: "Artemis Fowl and the Arctic Incident. Book 2",
         title: "Artemis Fowl and the Arctic Incident. Book 2",
@@ -225,6 +234,7 @@ const catalog = [
     },
     {
         id: 10,
+        link: "/product/solutions-and-edition-intermediate-students-book/",
         img: "/img/books/5133cfb6-e518-11e9-811a-ac1f6b909025-1800x1200.jpg",
         alt: "Solutions 2nd Edition Intermediate: Student's Book",
         title: "Solutions 2nd Edition Intermediate: Student's Book",
@@ -249,6 +259,7 @@ const catalog = [
     },
     {
         id: 11,
+        link: "/product/little-women-ladybird-classics/",
         img: "/img/books/9780723270874-1800x1200.jpg",
         alt: "Little Women (Ladybird Classics)",
         title: "Little Women (Ladybird Classics)",
