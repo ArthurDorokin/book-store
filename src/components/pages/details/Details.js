@@ -4,6 +4,7 @@ import './Details.css'
 const Details = ({selectProduct}) => (
 
     <div className="details">
+        {console.log(selectProduct)}
         <div className="book-item" key={selectProduct.id}>
             <div className="wrap-details">
                 <div className="img-book">
@@ -32,6 +33,13 @@ const Details = ({selectProduct}) => (
                         <div className="btn-book">
                             <button>{selectProduct.buy}</button>
                         </div>
+                    </div>
+                    <div className="list-in-info">
+                        <div className="isbn"><strong>ISBN:</strong> {selectProduct.detailedInformation.ISBN}</div>
+                        <div className="format"><strong>Format:</strong> {selectProduct.detailedInformation.format}</div>
+                        <div className="numberOfPages"><strong>Number Pages:</strong> {selectProduct.detailedInformation.numberOfPages}</div>
+                        <div className="yearOfPublication"><strong>Year Publication:</strong> {selectProduct.detailedInformation.yearOfPublication}</div>
+                        <div className="publishingHouse"><strong>Publishing House:</strong> {selectProduct.detailedInformation.publishingHouse}</div>
                     </div>
                 </div>
             </div>
