@@ -1,11 +1,12 @@
 import React from "react";
 import './Header.css'
+import {NavLink} from "react-router-dom";
 
 const Header = () => (
     <div className="header">
         <div className="wrap-header">
             <div className="header-title">
-                React Redux Book Store
+                <NavLink to="/">React Redux Book Store</NavLink>
             </div>
             <div className="right-block">
                 <div className="price">

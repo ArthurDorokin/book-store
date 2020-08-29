@@ -1,0 +1,46 @@
+.details {
+    width: 1150px;
+    margin: 25px auto;
+}
+.details .book-item .rating-book {
+    padding: 10px 10px 10px 0;
+    width: 220px;
+}
+.details .book-item .btn-book button {
+    padding: 8px 10px;
+}
+.details .info-price-control {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 220px;
+}
+
+.details .wrap-details {
+    display: flex;
+}
+
+.details .wrap-details .info-details {
+    margin: 0 0 0 50px;
+    width: 50%;
+}
+
+.details .img-book {
+    width: 300px;
+}
+
+.details .img-book img {
+    width: 100%;
+}
+
+.details .description-book h4 {
+    border-bottom: 2px solid #2ac128;
+    width: fit-content;
+}
+
+.details .description-book p {
+    font-size: 15px;
+    border: 1px solid #d6d6d6;
+    padding: 15px;
+
+}

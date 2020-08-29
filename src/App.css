@@ -7,3 +7,71 @@
 .main .container strong{
     font-weight: 600;
 }
+
+.book-item .rating-star .rating-span.one span:nth-of-type(1) {
+    filter: invert(.1);
+}
+.book-item .rating-book {
+    padding: 10px 10px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: relative;
+}
+
+.book-item .rating-span {
+    position: relative;
+    display: flex;
+}
+
+.book-item .rating-star {
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+    margin: 0 0 0 10px;
+}
+.book-item .rating-star span {
+    background: url(/img/w512h5121386955480starfull.png) no-repeat;
+    width: 20px;
+    height: 20px;
+    position: relative;
+    background-size: contain;
+    padding: 0 0 0 3px;
+    filter: invert(.5);
+}
+
+.book-item .rating-star .rating-span.two span:nth-of-type(1),
+.book-item .rating-star .rating-span.two span:nth-of-type(2) {
+    filter: invert(.1);
+}
+
+.book-item .rating-star .rating-span.three span:nth-of-type(1),
+.book-item .rating-star .rating-span.three span:nth-of-type(2),
+.book-item .rating-star .rating-span.three span:nth-of-type(3) {
+    filter: invert(.1);
+}
+
+.book-item .rating-star .rating-span.four span:nth-of-type(1),
+.book-item .rating-star .rating-span.four span:nth-of-type(2),
+.book-item .rating-star .rating-span.four span:nth-of-type(3),
+.book-item .rating-star .rating-span.four span:nth-of-type(4) {
+    filter: invert(.1);
+}
+
+.book-item .rating-star .rating-span.five span:nth-of-type(1),
+.book-item .rating-star .rating-span.five span:nth-of-type(2),
+.book-item .rating-star .rating-span.five span:nth-of-type(3),
+.book-item .rating-star .rating-span.five span:nth-of-type(4),
+.book-item .rating-star .rating-span.five span:nth-of-type(5) {
+    filter: invert(.1);
+}
+
+.book-item .btn-book button {
+    border: none;
+    outline: none;
+    background: #2ac128;
+    width: 100%;
+    padding: 8px 0;
+    color: #ffffff;
+    cursor: pointer;
+}

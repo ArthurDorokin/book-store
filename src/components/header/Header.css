@@ -47,3 +47,7 @@
     border-right: 1px solid #d6d6d6;
     padding: 0 15px 0 0;
 }
+.main .wrap-header .header-title a{
+    text-decoration: none;
+    color: #000000;
+}
