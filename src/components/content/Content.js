@@ -3,17 +3,19 @@ import {NavLink} from "react-router-dom";
 import {connect} from 'react-redux'
 import './Content.css';
 import {setBooks} from "../redux/actions/books";
+import {takeProductId} from "../redux/actions/details";
 
 class Content extends Component {
     render() {
-        const {books, addToCart} = this.props.books
-
+        const {books} = this.props.books
+        const {addToCart} = this.props
+        console.log('adaw', this.props)
         return (
             <div className="content">
                 <div className="wrap-books">
                     {books.map((item) =>
                         <div className="book-item" key={item.id}>
-                            <NavLink to={item.link} onClick={() => this.props.getProduct(item.id)}>
+                            <NavLink to={item.link} onClick={() => this.props.takeProductId(item.id)}>
                                 <div className="img-book">
                                     <img src={item.img} alt={item.alt}/>
                                 </div>
@@ -53,7 +55,8 @@ const mapStateProps = ({books}) => ({
     books: books
 })
 const mapDispatchToProps = dispatch => ({
-    setBooks: books => dispatch(setBooks(books))
+    setBooks: books => dispatch(setBooks(books)),
+    takeProductId: (id) => dispatch(takeProductId(id))
 })
 
 export default connect(mapStateProps, mapDispatchToProps)(Content);
