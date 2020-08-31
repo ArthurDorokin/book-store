@@ -23,13 +23,8 @@ class App extends Component {
         return (
             <Layout>
                 <Switch>
-                    <Route exact path="/" component={(props) => <Home
-                        catalog={this.state.catalog}
-                        getProduct={this.getProduct}
-                    />}/>
-                    <Route path="/product/" component={(props) => <Details
-                        selectProduct={this.state.selectProduct}
-                    />}/>
+                    <Route exact path="/" component={(props) => <Home getProduct={this.getProduct} />}/>
+                    <Route path="/product/" component={(props) => <Details selectProduct={this.state.selectProduct} />}/>
                 </Switch>
             </Layout>
 

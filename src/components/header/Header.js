@@ -10,10 +10,10 @@ const Header = () => (
             </div>
             <div className="right-block">
                 <div className="price">
-                    Total: <span>5780 uah</span>
+                    Total: <span>0 uah</span>
                 </div>
                 <div className="basket">
-                    Basket <span>3</span>
+                    Basket <span>0</span>
                 </div>
             </div>
         </div>

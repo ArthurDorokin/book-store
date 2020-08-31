@@ -1,4 +1,4 @@
-const catalog = [
+const books = [
     {
         id: 0,
         link: "/product/big-book-of-science-things-to-make-and-do/",
@@ -284,4 +284,4 @@ const catalog = [
         }
     }]
 
-export default catalog;
+export default books;

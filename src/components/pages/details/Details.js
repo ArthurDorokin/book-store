@@ -4,7 +4,6 @@ import './Details.css'
 const Details = ({selectProduct}) => (
 
     <div className="details">
-        {console.log(selectProduct)}
         <div className="book-item" key={selectProduct.id}>
             <div className="wrap-details">
                 <div className="img-book">

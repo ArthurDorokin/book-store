@@ -1,15 +1,17 @@
 import React, {Component} from 'react';
 import {NavLink} from "react-router-dom";
+import {connect} from 'react-redux'
 import './Content.css';
+import {setBooks} from "../redux/actions/books";
 
 class Content extends Component {
-
     render() {
-        const {catalog} = this.props
+        const {books, addToCart} = this.props.books
+
         return (
             <div className="content">
                 <div className="wrap-books">
-                    {catalog.map((item) =>
+                    {books.map((item) =>
                         <div className="book-item" key={item.id}>
                             <NavLink to={item.link} onClick={() => this.props.getProduct(item.id)}>
                                 <div className="img-book">
@@ -21,7 +23,7 @@ class Content extends Component {
                                 </div>
                             </NavLink>
                             <div className="btn-book">
-                                <button>{item.buy}</button>
+                                <button onClick={addToCart}>{item.buy}</button>
                             </div>
                             <div className="price-book">uah {item.price}</div>
                             <div className="rating-book">
@@ -46,4 +48,12 @@ class Content extends Component {
 
 }
 
-export default Content;
+
+const mapStateProps = ({books}) => ({
+    books: books
+})
+const mapDispatchToProps = dispatch => ({
+    setBooks: books => dispatch(setBooks(books))
+})
+
+export default connect(mapStateProps, mapDispatchToProps)(Content);
