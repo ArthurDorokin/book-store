@@ -284,4 +284,15 @@ const books = [
         }
     }]
 
-export default books;
+const filterList = [
+    {value: 0, class: 'all hover', label: 'All'},
+    {value: 1, class: 'popular', label: 'Popular'},
+    {value: 2, class: 'price-expensive', label: 'Price (expensive)'},
+    {value: 3, class: 'price-cheap', label: 'Price (cheap)'},
+    {value: 4, class: 'author', label: 'Author'}
+    ];
+
+export {
+    books,
+    filterList
+}

@@ -1,13 +1,13 @@
 import {books} from "../../constans";
 
-
 const initialState = {
     books
 }
 
 export default (state = initialState, action) => {
+    console.log('filter', action);
     switch (action.type) {
-        case "SET_BOOKS":
+        case "TAKE_FILTER":
             return {
                 ...state,
                 books: action.payload,

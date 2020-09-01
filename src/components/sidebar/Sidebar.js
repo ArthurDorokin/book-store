@@ -1,17 +1,35 @@
-import React from 'react';
+import React, {Component} from 'react';
 import './Sidebar.css';
+import {filterList} from "../constans";
+import {takeProductId} from "../redux/actions/details";
+import {connect} from "react-redux";
+import {takeFilter} from "../redux/actions/filter";
 
-const Sidebar = () => (
-    <div className="sidebar">
-        <div className="all item-sort hover">All</div>
-        <div className="popular item-sort">Popular</div>
-        <div className="price-expensive item-sort">Price (expensive)</div>
-        <div className="price-cheap item-sort">Price (cheap)</div>
-        <div className="author item-sort">Author</div>
-        <div className="search">
-            <input className="input-search" type="search" placeholder='Search book...' />
-        </div>
-    </div>
-)
+class Sidebar extends Component {
+    render() {
+        return (
+            <div className="sidebar">
+                {filterList.map((item) =>
+                    <div className={`${"item-sort"} ${item.class}`} key={item.value}
+                         onClick={() => this.props.takeFilter(item.value)}
+                    >{item.label}</div>
+                )}
+                <div className="search">
+                    <input className="input-search" type="search" placeholder='Search book...'/>
+                </div>
+            </div>
+        )
+    }
+}
 
-export default Sidebar;
+// export default Sidebar;
+
+// const mapStateProps = ({filterList}) => ({
+//     filterList: filterList
+// })
+
+const mapDispatchToProps = dispatch => ({
+    takeFilter: (id) => dispatch(takeFilter(id))
+})
+
+export default connect(null, mapDispatchToProps)(Sidebar);

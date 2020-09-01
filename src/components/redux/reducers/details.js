@@ -1,4 +1,4 @@
-import books from "../../constans";
+import {books} from "../../constans";
 
 const initialState = {
    books, selectProduct: []
@@ -12,7 +12,7 @@ export default (state = initialState, action) => {
                 ...state,
                 selectProduct: state.books.filter(item => item.id === action.id)
             }
-        //console.log({selectProduct: state.books.filter(item => item.id === action.id)})
+        //console.log({selectProduct: state.books.filter(item => item.id === action.payload)})
         default:
             return state;
     }
