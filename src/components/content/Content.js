@@ -2,14 +2,12 @@ import React, {Component} from 'react';
 import {NavLink} from "react-router-dom";
 import {connect} from 'react-redux'
 import './Content.css';
-import {setBooks} from "../redux/actions/books";
 import {takeProductId} from "../redux/actions/details";
 
 class Content extends Component {
     render() {
         const {books} = this.props.books
-        const {addToCart} = this.props
-        console.log('adaw', this.props)
+        //console.log(books);
         return (
             <div className="content">
                 <div className="wrap-books">
@@ -25,7 +23,7 @@ class Content extends Component {
                                 </div>
                             </NavLink>
                             <div className="btn-book">
-                                <button onClick={addToCart}>{item.buy}</button>
+                                <button>{item.buy}</button>
                             </div>
                             <div className="price-book">uah {item.price}</div>
                             <div className="rating-book">
@@ -55,7 +53,6 @@ const mapStateProps = ({books}) => ({
     books: books
 })
 const mapDispatchToProps = dispatch => ({
-    setBooks: books => dispatch(setBooks(books)),
     takeProductId: (id) => dispatch(takeProductId(id))
 })
 

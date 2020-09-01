@@ -6,11 +6,8 @@ class Home extends Component {
     render() {
         return (
             <div className="wrap-content">
-                <Content
-                    catalog={this.props.catalog}
-                    getProduct={this.props.getProduct}
-                />
-                <Sidebar/>
+                <Content />
+                <Sidebar />
             </div>
         )
     }
