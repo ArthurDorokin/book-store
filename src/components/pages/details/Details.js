@@ -5,11 +5,13 @@ import {connect} from "react-redux";
 class Details extends Component {
     render() {
         //const {selectProduct} = this.props.selectProduct
-        //console.log('selectProduct', this.props.selectProduct)
+        //console.log('selectProduct', selectProduct)
 
         return (
             <div className="details">
                 details
+                {/*{selectProduct}*/}
+
                 {/*<div className="book-item" key={selectProduct.id}>*/}
                 {/*    <div className="wrap-details">*/}
                 {/*        <div className="img-book">*/}
@@ -66,7 +68,7 @@ class Details extends Component {
 
 
 const mapStateProps = ({selectProduct}) => ({
-    selectProduct
+    selectProduct: selectProduct
 })
 
 export default connect(mapStateProps, null)(Details);
