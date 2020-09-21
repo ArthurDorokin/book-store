@@ -1,7 +1,6 @@
 import React, {Component} from 'react';
 import './Sidebar.css';
 import {filterList} from "../constans";
-import {takeProductId} from "../redux/actions/details";
 import {connect} from "react-redux";
 import {takeFilter} from "../redux/actions/filter";
 

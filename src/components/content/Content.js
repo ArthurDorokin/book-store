@@ -7,8 +7,7 @@ import {takeProductId} from "../redux/actions/details";
 class Content extends Component {
     render() {
         const {books} = this.props.books
-        const {store} = this.props
-        //console.log(store);
+
         return (
             <div className="content">
                 <div className="wrap-books">
