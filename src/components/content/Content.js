@@ -49,9 +49,18 @@ class Content extends Component {
 }
 
 
-const mapStateProps = ({books}) => ({
-    books: books
-})
+const mapStateProps = ({books, search}) => {
+    console.log(books);
+    console.log(search);
+    return {
+        books: books
+        // books: books.filter(item =>
+        //     item.title.toLowerCase().indexOf(search.toLowerCase()) >= 0 ||
+        //     item.author.toLowerCase().indexOf(search.toLowerCase()) >= 0
+        // )
+    }
+}
+
 const mapDispatchToProps = dispatch => ({
     takeProductId: (id) => dispatch(takeProductId(id))
 })

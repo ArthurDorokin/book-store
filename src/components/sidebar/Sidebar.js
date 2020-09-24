@@ -3,8 +3,14 @@ import './Sidebar.css';
 import {filterList} from "../constans";
 import {connect} from "react-redux";
 import {takeFilter} from "../redux/actions/filter";
+import {setSearch} from "../redux/actions/search";
 
 class Sidebar extends Component {
+
+    onUpdateSearch = (event) => {
+        this.props.setSearch(event.target.value)
+    };
+
     render() {
         return (
             <div className="sidebar">
@@ -14,21 +20,21 @@ class Sidebar extends Component {
                     >{item.label}</div>
                 )}
                 <div className="search">
-                    <input className="input-search" type="search" placeholder='Search book...'/>
+                    <input className="input-search"
+                           type="text"
+                           placeholder='Search book...'
+                           onChange={this.onUpdateSearch}
+                    />
                 </div>
             </div>
         )
     }
 }
 
-// export default Sidebar;
-
-// const mapStateProps = ({filterList}) => ({
-//     filterList: filterList
-// })
 
 const mapDispatchToProps = dispatch => ({
-    takeFilter: (id) => dispatch(takeFilter(id))
+    takeFilter: (id) => dispatch(takeFilter(id)),
+    setSearch: (search) => dispatch(setSearch(search))
 })
 
 export default connect(null, mapDispatchToProps)(Sidebar);
