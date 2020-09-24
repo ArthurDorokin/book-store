@@ -49,7 +49,7 @@ class Content extends Component {
 }
 
 
-const mapStateProps = ({books, search}) => {
+const mapStateToProps = ({books, search}) => {
     console.log(books);
     console.log(search);
     return {
@@ -65,4 +65,4 @@ const mapDispatchToProps = dispatch => ({
     takeProductId: (id) => dispatch(takeProductId(id))
 })
 
-export default connect(mapStateProps, mapDispatchToProps)(Content);
+export default connect(mapStateToProps, mapDispatchToProps)(Content);
