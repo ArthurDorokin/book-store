@@ -2,8 +2,8 @@ import React, {Component} from 'react';
 import './Sidebar.css';
 import {filterList} from "../constans";
 import {connect} from "react-redux";
-import {takeFilter} from "../redux/actions/filter";
 import {setSearch} from "../redux/actions/search";
+import {setFilter} from "../redux/actions/filter";
 
 class Sidebar extends Component {
 
@@ -16,13 +16,13 @@ class Sidebar extends Component {
             <div className="sidebar">
                 {filterList.map((item) =>
                     <div className={`${"item-sort"} ${item.class}`} key={item.value}
-                         onClick={() => this.props.takeFilter(item.value)}
+                         onClick={() => this.props.setFilter(item.value)}
                     >{item.label}</div>
                 )}
                 <div className="search">
                     <input className="input-search"
                            type="text"
-                           placeholder='Search book or author...'
+                           placeholder='Search book...'
                            onChange={this.onUpdateSearch}
                     />
                 </div>
@@ -33,8 +33,8 @@ class Sidebar extends Component {
 
 
 const mapDispatchToProps = dispatch => ({
-    takeFilter: (id) => dispatch(takeFilter(id)),
-    setSearch: (search) => dispatch(setSearch(search))
+    setSearch: (search) => dispatch(setSearch(search)),
+    setFilter: (value) => dispatch(setFilter(value)),
 })
 
 export default connect(null, mapDispatchToProps)(Sidebar);

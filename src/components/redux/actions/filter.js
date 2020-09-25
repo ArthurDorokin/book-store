@@ -1,4 +1,4 @@
-export const takeFilter = id => ({
-    type: 'TAKE_FILTER',
-    payload: id
+export const setFilter = value => ({
+    type: 'SET_FILTER',
+    payload: value
 });
