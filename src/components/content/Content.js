@@ -49,15 +49,9 @@ class Content extends Component {
 }
 
 
-const mapStateToProps = ({books, search}) => {
-    console.log(books);
-    console.log(search);
+const mapStateToProps = ({books}) => {
     return {
         books: books
-        // books: books.filter(item =>
-        //     item.title.toLowerCase().indexOf(search.toLowerCase()) >= 0 ||
-        //     item.author.toLowerCase().indexOf(search.toLowerCase()) >= 0
-        // )
     }
 }
 

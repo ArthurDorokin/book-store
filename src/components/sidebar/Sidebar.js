@@ -22,7 +22,7 @@ class Sidebar extends Component {
                 <div className="search">
                     <input className="input-search"
                            type="text"
-                           placeholder='Search book...'
+                           placeholder='Search book or author...'
                            onChange={this.onUpdateSearch}
                     />
                 </div>
