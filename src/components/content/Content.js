@@ -3,6 +3,7 @@ import {NavLink} from "react-router-dom";
 import {connect} from 'react-redux'
 import './Content.css';
 import {takeProductId} from "../redux/actions/details";
+import {addToCart} from "../redux/actions/cart";
 
 class Content extends Component {
     render() {
@@ -23,7 +24,7 @@ class Content extends Component {
                                 </div>
                             </NavLink>
                             <div className="btn-book">
-                                <button>{item.buy}</button>
+                                <button onClick={() => this.props.addToCart(item.id)}>{item.buy}</button>
                             </div>
                             <div className="price-book">uah {item.price}</div>
                             <div className="rating-book">
@@ -56,7 +57,8 @@ const mapStateToProps = ({books}) => {
 }
 
 const mapDispatchToProps = dispatch => ({
-    takeProductId: (id) => dispatch(takeProductId(id))
+    takeProductId: (id) => dispatch(takeProductId(id)),
+    addToCart: (id) => dispatch(addToCart(id))
 })
 
 export default connect(mapStateToProps, mapDispatchToProps)(Content);

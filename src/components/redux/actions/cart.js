@@ -1,6 +1,6 @@
-export const addToCart = obj => ({
-    type: 'ADD_TO-CART',
-    payload: obj
+export const addToCart = id => ({
+    type: 'ADD_TO_CART',
+    payload: id
 });
 
 export const removeFromCart = id => ({

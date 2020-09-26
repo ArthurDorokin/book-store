@@ -6,7 +6,60 @@
     right: 0;
     top: 4%;
     z-index: 99;
-    box-shadow: 0 0 10px rgba(0,0,0,0.5);
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
     padding: 10px;
     display: none;
+}
+
+.main.active .basket-block {
+    display: block;
+}
+
+.basket-block .book-item {
+    border-bottom: 1px solid #dedede;
+    position: relative;
+}
+
+.basket-block .book-item .delete {
+    position: absolute;
+    top: 0;
+    right: 0;
+    cursor: pointer;
+}
+
+.basket-block .book-item .delete span:nth-of-type(1) {
+    width: 1px;
+    height: 12px;
+    background: #000000;
+    position: absolute;
+    transform: rotate(45deg);
+}
+
+.basket-block .book-item .delete span:nth-of-type(2) {
+    width: 1px;
+    height: 12px;
+    background: #000000;
+    position: absolute;
+    transform: rotate(-45deg);
+}
+
+.basket-block .book-item img {
+    width: 75px;
+    margin: 0 10px 0 0;
+}
+
+.basket-block .book-item a {
+    display: flex;
+    align-items: center;
+    text-decoration: none;
+}
+
+.basket-block .book-item .title-book h4 {
+    margin: 0;
+    font-size: 14px;
+}
+
+.basket-block .book-item .title-book h5 {
+    margin: 15px 0 0 0;
+    font-size: 12px;
 }
