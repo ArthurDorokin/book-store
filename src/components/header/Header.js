@@ -1,9 +1,12 @@
 import React, {Component} from "react";
 import './Header.css'
 import {NavLink} from "react-router-dom";
+import {connect} from "react-redux";
 
 class Header extends Component {
     render() {
+        const {cart} = this.props.cart
+
         return (
             <div className="header">
                 <div className="wrap-header">
@@ -15,7 +18,7 @@ class Header extends Component {
                             Total: <span>0 uah</span>
                         </div>
                         <div className="basket" onClick={() => this.props.toggleClass()}>
-                            Basket <span>0</span>
+                            Basket <span>{cart.length}</span>
                         </div>
                     </div>
                 </div>
@@ -24,4 +27,10 @@ class Header extends Component {
     }
 }
 
-export default Header
+const mapStateToProps = ({cart}) => {
+    return {
+        cart: cart
+    }
+}
+
+export default connect(mapStateToProps, null)(Header);

@@ -7,7 +7,7 @@ import {removeFromCart} from "../../redux/actions/cart";
 class Basket extends Component{
     render() {
         const {cart} = this.props.cart
-
+        console.log(cart);
         return(
             <div className="basket-block">
                 <div className="basket-wrap">

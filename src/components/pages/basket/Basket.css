@@ -1,7 +1,7 @@
 .basket-block {
     position: absolute;
     width: 300px;
-    height: 300px;
+    height: 400px;
     background: #ffffff;
     right: 0;
     top: 4%;
@@ -9,7 +9,25 @@
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
     padding: 10px;
     display: none;
+    scrollbar-color: #dedede #ffffff;
+    scrollbar-width: thin;
+    overflow-y: scroll;
 }
+
+.basket-block::-webkit-scrollbar {
+    width: 5px;
+}
+
+.basket-block::-webkit-scrollbar-track {
+    background: #DADCDE;
+    border-radius: 50px;
+}
+
+.basket-block::-webkit-scrollbar-thumb {
+    background: #dedede;
+    border-radius: 50px;
+}
+
 
 .main.active .basket-block {
     display: block;
@@ -18,28 +36,34 @@
 .basket-block .book-item {
     border-bottom: 1px solid #dedede;
     position: relative;
+    padding: 10px 0 10px 0;
 }
 
 .basket-block .book-item .delete {
     position: absolute;
-    top: 0;
-    right: 0;
+    top: 10px;
+    right: 10px;
     cursor: pointer;
 }
 
-.basket-block .book-item .delete span:nth-of-type(1) {
+.basket-block .book-item .delete span {
+    background: #000000;
+    transition: .5s;
     width: 1px;
     height: 12px;
-    background: #000000;
     position: absolute;
+}
+
+.basket-block .book-item .delete:hover span {
+    background: #a52626;
+    transition: .5s;
+}
+
+.basket-block .book-item .delete span:nth-of-type(1) {
     transform: rotate(45deg);
 }
 
 .basket-block .book-item .delete span:nth-of-type(2) {
-    width: 1px;
-    height: 12px;
-    background: #000000;
-    position: absolute;
     transform: rotate(-45deg);
 }
 
