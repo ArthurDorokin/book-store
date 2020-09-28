@@ -3,11 +3,12 @@ import './Basket.css';
 import {connect} from "react-redux";
 import {NavLink} from "react-router-dom";
 import {removeFromCart} from "../../redux/actions/cart";
+import {takeProductId} from "../../redux/actions/details";
 
 class Basket extends Component{
     render() {
         const {cart} = this.props.cart
-        console.log(cart);
+
         return(
             <div className="basket-block">
                 <div className="basket-wrap">
@@ -42,6 +43,7 @@ const mapStateToProps = ({cart}) => {
 
 const mapDispatchToProps = dispatch => ({
     removeFromCart: (id) => dispatch(removeFromCart(id)),
+    takeProductId: (id) => dispatch(takeProductId(id)),
 })
 
 export default connect(mapStateToProps, mapDispatchToProps)(Basket);

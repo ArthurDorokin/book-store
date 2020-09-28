@@ -44,6 +44,8 @@
     top: 10px;
     right: 10px;
     cursor: pointer;
+    width: 15px;
+    height: 15px;
 }
 
 .basket-block .book-item .delete span {
@@ -52,6 +54,8 @@
     width: 1px;
     height: 12px;
     position: absolute;
+    right: 7px;
+    top: 2px;
 }
 
 .basket-block .book-item .delete:hover span {

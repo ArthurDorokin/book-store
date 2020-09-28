@@ -8,7 +8,6 @@ import {addToCart} from "../redux/actions/cart";
 class Content extends Component {
     render() {
         const {books} = this.props.books
-
         return (
             <div className="content">
                 <div className="wrap-books">
