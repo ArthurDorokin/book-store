@@ -6,6 +6,7 @@ import {connect} from "react-redux";
 class Header extends Component {
     render() {
         const {cart} = this.props.cart
+
         return (
             <div className="header">
                 <div className="wrap-header">
@@ -26,10 +27,6 @@ class Header extends Component {
     }
 }
 
-const mapStateToProps = ({cart}) => {
-    return {
-        cart: cart
-    }
-}
+const mapStateToProps = ({cart}) => ({cart: cart})
 
 export default connect(mapStateToProps, null)(Header);

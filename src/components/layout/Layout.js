@@ -4,9 +4,7 @@ import Basket from "../pages/basket";
 
 class Layout extends Component {
 
-    state = {
-        active: false
-    }
+    state = {active: false}
 
     toggleClass = () => {
         const active = this.state.active;

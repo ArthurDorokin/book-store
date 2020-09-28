@@ -31,7 +31,6 @@ class Sidebar extends Component {
     }
 }
 
-
 const mapDispatchToProps = dispatch => ({
     setSearch: (search) => dispatch(setSearch(search)),
     setFilter: (value) => dispatch(setFilter(value)),

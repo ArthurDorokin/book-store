@@ -8,6 +8,7 @@ import {addToCart} from "../redux/actions/cart";
 class Content extends Component {
     render() {
         const {books} = this.props.books
+
         return (
             <div className="content">
                 <div className="wrap-books">
@@ -49,11 +50,7 @@ class Content extends Component {
 }
 
 
-const mapStateToProps = ({books}) => {
-    return {
-        books: books
-    }
-}
+const mapStateToProps = ({books}) => ({books: books})
 
 const mapDispatchToProps = dispatch => ({
     takeProductId: (id) => dispatch(takeProductId(id)),

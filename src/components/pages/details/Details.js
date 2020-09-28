@@ -1,7 +1,6 @@
 import React, {Component} from "react";
 import './Details.css'
 import {connect} from "react-redux";
-import {takeProductId} from "../../redux/actions/details";
 import {addToCart} from "../../redux/actions/cart";
 
 class Details extends Component {
@@ -67,12 +66,10 @@ class Details extends Component {
 }
 
 
-const mapStateProps = ({details}) => ({
-    details: details
-})
+const mapStateToProps = ({details}) => ({details: details})
 
 const mapDispatchToProps = dispatch => ({
     addToCart: (id) => dispatch(addToCart(id))
 })
 
-export default connect(mapStateProps, mapDispatchToProps)(Details);
+export default connect(mapStateToProps, mapDispatchToProps)(Details);

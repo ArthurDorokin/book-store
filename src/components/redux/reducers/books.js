@@ -10,7 +10,6 @@ export default (state = initialState, action) => {
             return {
                 ...state,
                 books: books.filter(item => item.title.toLowerCase().includes(action.payload.toLowerCase()))
-                    //&& books.filter(item => item.author.toLowerCase().includes(action.payload.toLowerCase()))
             }
         case "SET_FILTER":
             if (action.payload === 0) {
@@ -33,6 +32,7 @@ export default (state = initialState, action) => {
                     books: books.sort((a, b) => a.priceSumBasket > b.priceSumBasket ? 1 : -1)
                 }
             }
+            break;
         default:
             return state;
     }

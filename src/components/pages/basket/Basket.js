@@ -35,11 +35,7 @@ class Basket extends Component{
     }
 }
 
-const mapStateToProps = ({cart}) => {
-    return {
-        cart: cart
-    }
-}
+const mapStateToProps = ({cart}) => ({cart: cart})
 
 const mapDispatchToProps = dispatch => ({
     removeFromCart: (id) => dispatch(removeFromCart(id)),
