@@ -1,6 +1,8 @@
 import React, {Component} from "react";
 import './Details.css'
 import {connect} from "react-redux";
+import {takeProductId} from "../../redux/actions/details";
+import {addToCart} from "../../redux/actions/cart";
 
 class Details extends Component {
     render() {
@@ -33,9 +35,8 @@ class Details extends Component {
                                 </div>
                                 <div className="info-price-control">
                                     <div className="price"><strong>{item.price} uah</strong></div>
-                                    {/*<div className="counter"></div>*/}
                                     <div className="btn-book">
-                                        <button>{item.buy}</button>
+                                        <button onClick={() => this.props.addToCart(item.id)}>{item.buy}</button>
                                     </div>
                                 </div>
                                 <div className="list-in-info">
@@ -70,4 +71,8 @@ const mapStateProps = ({details}) => ({
     details: details
 })
 
-export default connect(mapStateProps, null)(Details);
+const mapDispatchToProps = dispatch => ({
+    addToCart: (id) => dispatch(addToCart(id))
+})
+
+export default connect(mapStateProps, mapDispatchToProps)(Details);
