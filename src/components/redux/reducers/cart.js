@@ -14,8 +14,8 @@ export default (state = initialState, action) => {
                 return {cart: state.cart.concat(productSelection)};
             } else {
                 alert("The product has been added to cart.");
+                return state
             }
-            break;
         case "REMOVE_FROM_CART":
             if (window.confirm("Do you want to delete this product?")) {
                 return {cart: state.cart.filter(item => item.id !== action.forDelete)};

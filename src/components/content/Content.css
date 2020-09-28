@@ -21,14 +21,17 @@
     cursor: pointer;
     transition: .5s;
 }
+
 .main .wrap-books .book-item:hover {
     border: 1px solid #9a9a9a;
     transition: .5s;
 }
+
 .main .wrap-books .book-item a {
     text-decoration: none;
     color: #000000;
 }
+
 .main .wrap-books .book-item .title-book h4 {
     height: 70px;
 }
@@ -42,7 +45,6 @@
     width: 100%;
     height: 100%;
 }
-
 
 .main .wrap-books .book-item .title-book {
     padding: 0 10px;

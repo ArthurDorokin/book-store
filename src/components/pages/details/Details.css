@@ -2,13 +2,16 @@
     width: 1150px;
     margin: 25px auto;
 }
+
 .details .book-item .rating-book {
     padding: 10px 10px 10px 0;
     width: 220px;
 }
+
 .details .book-item .btn-book button {
     padding: 8px 10px;
 }
+
 .details .info-price-control {
     display: flex;
     justify-content: space-between;
@@ -57,6 +60,7 @@
     position: relative;
     display: inline-block;
 }
+
 .details .list-in-info > div {
     margin: 0 0 10px 0;
 }
